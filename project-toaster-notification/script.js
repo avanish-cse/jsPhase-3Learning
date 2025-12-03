@@ -21,11 +21,14 @@ let toaster = createToaster({
     positionX: "left",
     positionY: "bottom",
     theme: "dark",
-    duration: 3,
+    duration: 5,
 
 });
 
-toaster("You sent a request");
+toaster("You sent a request ");
 setTimeout(() => {
-    toaster("Accepted your  request")
+    toaster("Ishita Accepted your  request");
+    setTimeout(() => {
+        toaster(`Ishita sent you a message: "Hii Hero 😘"`)
+    }, 2000);
 }, 2000);
