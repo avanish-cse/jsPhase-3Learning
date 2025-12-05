@@ -42,7 +42,7 @@ let obj3 = {
     sayName: function () {
 
         let newFn = () => {
-            console.log(this, "jsjs")  //  arrow fn apne this ki value hamesha parent se lete hain
+            console.log(this)  //  arrow fn apne this ki value hamesha parent se lete hain
         }
 
         newFn(); // yah object3 ko hi print karega
