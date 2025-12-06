@@ -51,3 +51,15 @@ let obj3 = {
 
 }
 obj3.sayName()
+
+
+// -------------------------------------------------------------------
+
+// we can set the value of this during the function call
+function callKaro() {
+    console.log(this, "callKaro");
+    
+}
+
+callKaro.call(obj2)  // .call method ko use kar ke object parse kiya ja rha so to set the value of this
+

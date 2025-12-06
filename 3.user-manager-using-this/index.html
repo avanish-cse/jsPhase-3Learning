@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta-name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minimal Dark Form</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+
+    <div class="form-container">
+        <h2>User Profile</h2>
+
+        <form>
+            <!-- USERNAME -->
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter username" required minlength="3" maxlength="20"
+                    pattern="^[a-zA-Z0-9_]+$"
+                    title="Username must be 3–20 characters and use letters, numbers, or underscores only.">
+            </div>
+
+            <!-- ROLE -->
+            <div class="form-group">
+                <label for="role">Role</label>
+                <input type="text" id="role" placeholder="Enter role (e.g., Admin, User)" required minlength="2"
+                    maxlength="20" pattern="^[a-zA-Z ]+$" title="Role must contain only letters and spaces.">
+            </div>
+
+            <!-- BIO -->
+            <div class="form-group">
+                <label for="bio">Bio</label>
+                <textarea id="bio" placeholder="Write something about yourself..." required minlength="10"
+                    maxlength="200"></textarea>
+            </div>
+
+            <!-- PROFILE PICTURE URL -->
+            <div class="form-group">
+                <label for="profilePic">Profile Picture Link</label>
+                <input type="url" id="profilePic" placeholder="https://example.com/image.jpg" required>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <!-- PROFILE CARD -->
+    <div class="card-container">
+        <div class="user-card profile-layout">
+    
+            <div class="profile-pic-wrapper">
+                <img src="https://images.unsplash.com/photo-1460194436988-671f763436b7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGtuaWdodHxlbnwwfHwwfHx8MA%3D%3D"
+                    alt="Profile" class="profile-pic">
+            </div>
+    
+            <h3 class="card-username">Avanish007</h3>
+            <p class="card-role">admin</p>
+    
+            <p class="card-bio">
+                Creative mind exploring ideas and building meaningful things daily.
+            </p>
+    
+            <!-- Buttons -->
+            <div class="card-buttons">
+                <button class="contact-btn">Contact</button>
+                <button class="remove-btn">Remove</button>
+            </div>
+        </div>
+    </div>
+
+    
+
+</body>
+
+</html>
