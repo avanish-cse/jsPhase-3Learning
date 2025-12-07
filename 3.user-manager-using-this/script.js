@@ -1,6 +1,7 @@
 const form = document.querySelector("#form");
 let username = document.querySelector("#username");
 let role = document.querySelector("#role");
+let email = document.querySelector("#email");
 let bio = document.querySelector("#bio");
 let profilePic = document.querySelector("#profilePic");
 const cardContainer = document.querySelector("#card-container");
