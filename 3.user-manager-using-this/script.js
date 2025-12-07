@@ -25,6 +25,7 @@ const userManager = {
         this.users.push({
             username: username.value,
             role: role.value.trim(),
+            email: email.value,
             bio: bio.value.trim(),
             profilePic: profilePic.value.trim()
         });
@@ -101,9 +102,17 @@ const userManager = {
             //removeUser button call
             removeBtn.addEventListener("click", () => {
                 this.removeUser(index);
-            })
+            });
+
+            //mail to....
+            contactBtn.addEventListener("click", () => {
+                window.location.href = `mailto:${user.email}`
+            });
+
 
         });
+
+
 
     },
     removeUser: function (index) {
