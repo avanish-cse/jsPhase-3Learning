@@ -34,7 +34,7 @@ const userManager = {
 
         cardContainer.innerHTML = "";
 
-        this.users.forEach(user => {
+        this.users.forEach((user, index) => {
 
 
 
@@ -96,12 +96,18 @@ const userManager = {
             // Append to the card container
             cardContainer.appendChild(userCard);
 
+
+            //removeUser button call
+            removeBtn.addEventListener("click", () => {
+                this.removeUser(index);
+            })
+
         });
 
     },
-    removeUser: function () {
-
-
+    removeUser: function (index) {
+        this.users.splice(index, 1);
+        this.renderUI();
     }
 
 }
