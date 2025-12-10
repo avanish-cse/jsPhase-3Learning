@@ -15,8 +15,8 @@ class User {
     }
 
     checkRole() {
-      return  this.role !== "user" ? `you are an ${this.role}`: `you are a ${this.role}`;
-      
+        return this.role !== "user" ? `you are an ${this.role}` : `you are a ${this.role}`;
+
     }
 }
 
@@ -24,7 +24,7 @@ let user1 = new User("Avanish", "Khalilabad", "avanish.71", "avanishchaurasiya71
 let user2 = new User("Ankita", "Khalilabad", "akieve.4", "idk04@gmail.com");
 
 
-// extends
+// extends is classical inheritence (jaha class bna kar extend karna )
 
 class Admin extends User {
     constructor(name, address, username, email) {
@@ -39,9 +39,23 @@ class Admin extends User {
         })
     }
 
-   
+
 }
 
 
 
 let admin1 = new Admin("admin", "mai nhi bataunga", "@admin", "admin@mail.com");
+
+
+// prototypal inheritence 
+
+let coffee = {
+    color: "dark",
+    make: ()=> {
+      return "Gharrr Gharrrr Gharrrrrrrrr";
+       
+        
+    }
+}
+
+let chai = Object.create(coffee);
