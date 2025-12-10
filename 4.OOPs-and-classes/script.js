@@ -58,4 +58,6 @@ let coffee = {
     }
 }
 
-let chai = Object.create(coffee);
+let chai = Object.create(coffee); // yah coffee ke prototype se chai ke prototype ko jod deta hai
+
+
