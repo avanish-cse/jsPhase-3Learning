@@ -51,10 +51,10 @@ let admin1 = new Admin("admin", "mai nhi bataunga", "@admin", "admin@mail.com");
 
 let coffee = {
     color: "dark",
-    make: ()=> {
-      return "Gharrr Gharrrr Gharrrrrrrrr";
-       
-        
+    make: () => {
+        return "Gharrr Gharrrr Gharrrrrrrrr";
+
+
     }
 }
 
